@@ -38,9 +38,9 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
 			value="com.mysql.jdbc.Driver" />
 			
 		<property name="url"
-			value="jdbc:mysql://localhost:3306/emp_crud" />
+			value="jdbc:mysql://localhost:3306/chaitanya" />
 		<property name="username" value="root" />
-		<property name="password" value="root" />
+		<property name="password" value="" />
 
 	</bean>
 	
@@ -53,7 +53,7 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
 		<property name="hibernateProperties">
 			<props>
 				<prop key="hibernate.dialect">org.hibernate.dialect.MariaDBDialect</prop>
-				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<prop key="hibernate.hbm2ddl.auto">create</prop>
 				<prop key="hibernate.show_sql">true</prop>
 				<prop key="hibernate.format_sql">true</prop>	
 			</props>
